@@ -249,6 +249,7 @@ Sidebar
   box-shadow: var(--clr-red-dark);
   transition: var(--transition);
   transform: translate(-100%);
+  z-index: 1000;
 }
 .show-sidebar {
   transform: translate(0);
@@ -490,6 +491,12 @@ Menu
   height: 200px;
   border: 0.25rem solid var(--clr-gold);
   border-radius: var(--radius);
+  transform: scale(1);
+  transition: transform .5s;
+}
+
+.photo:hover {
+  transform: scale(1.5);
 }
 .item-info header {
   display: flex;
@@ -526,3 +533,5 @@ Menu
     height: 150px;
   }
 }
+
+
